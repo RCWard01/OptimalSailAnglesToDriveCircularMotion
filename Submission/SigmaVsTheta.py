@@ -21,11 +21,9 @@ def c_D(x):
 def g(s, a):
     if a > 0:
         if  s > a or s < a - np.pi/2:
-            print('here')
             return 0
     elif a < 0:
         if s < a + np.pi or s > np.pi*3/2 + a:
-            print('here2')
             return 0
     return c_L(a - s) * np.sin(a) - c_D(a - s) * np.cos(a)
 
